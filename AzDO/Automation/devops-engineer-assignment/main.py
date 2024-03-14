@@ -125,7 +125,8 @@ project = 'Cat Digital'
 #get PAT_SECRET from github actions secrets
 #AZDO_PAT = os.environ.get("AZDO_PAT", "Token not available!")
 #AZDO_PAT = read_txt_file("azdo_pat.txt").strip()
-
+os.system('pwd')
+os.system('ls')
 df_sheet_index = pd.ExcelFile('data.xlsx')
 df_sheet = pd.read_excel(df_sheet_index)
 team_name_dict = df_sheet.set_index('Team')['2024 DevOps Engineer'].to_dict()
