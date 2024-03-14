@@ -2,8 +2,6 @@
 name: Run Azdo DevOps Support Request Assignment Automation
 
 on:
-  schedule:
-    - cron: '30 9 * * *' # Every day at 3:30AM CST (github actions schedule is in UTC time)
   workflow_dispatch:
 jobs:
   build:
