@@ -127,7 +127,7 @@ project = 'Cat Digital'
 #AZDO_PAT = read_txt_file("azdo_pat.txt").strip()
 os.system('pwd')
 os.system('ls')
-df_sheet_index = pd.ExcelFile('/Azdo/Automation/devops-engineer-assignment/data.xlsx')
+df_sheet_index = pd.ExcelFile('/AzDO/Automation/devops-engineer-assignment/data.xlsx')
 df_sheet = pd.read_excel(df_sheet_index)
 team_name_dict = df_sheet.set_index('Team')['2024 DevOps Engineer'].to_dict()
 """
