@@ -20,9 +20,13 @@ jobs:
       - name: install python packages
         run: |
           pwd
+          ls
           python -m pip install --upgrade pip
           pip install -r AzDO/Automation/devops-engineer-assignment/requirements.txt
       - name: execute Azdo DevOps Support Request Assignment Automation python script # run main.py
         env:
           AZDO_PAT: ${{ secrets.CATDIGITALWI_PAT }}
-        run: python AzDO/Automation/devops-engineer-assignment/main.py
+        run: |
+          pwd
+          ls
+          python AzDO/Automation/devops-engineer-assignment/main.py
